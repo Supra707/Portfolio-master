@@ -1,40 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="main-content">
-    <header class="section sec1 header active" id="home">
-      <div class="header-content">
-        <div class="left-header">
-          <div class="h-shape"></div>
-          <div class="image">
-            <img src="img/hero1.png" alt="" />
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
+
+<body class="main-content">
+  <header class="section sec1 header active" id="home">
+    <div class="header-content">
+      <div class="left-header">
+        <div class="h-shape"></div>
+        <div class="image" style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              animation: bgPulse 3s infinite alternate;
+            ">
+          <img src="img/hero1.png" alt="" style="
+               
+                filter: drop-shadow(0 0 30px rgba(255, 223, 0, 0.8));
+                animation: bounce 2.5s infinite ease-in-out,
+                  tilt 1.5s infinite alternate ease-in-out;
+              " />
         </div>
-        <div class="right-header">
-          <h1 class="name">
-            Hi, I,m <span class="name">Subhajit Debnath</span>
-            A student
-          </h1>
-          <p>I,m a student of bacheloer's in Pharmacy I love to learn.</p>
+
+        <style>
+          /* Stronger Background Glow */
+          @keyframes bgPulse {
+            0% {
+              background-color: rgba(255, 223, 0, 0.1);
+              box-shadow: 0 0 20px rgba(255, 223, 0, 0.4);
+            }
+
+            100% {
+              background-color: rgba(255, 223, 0, 0.2);
+              box-shadow: 0 0 40px rgba(255, 223, 0, 0.7);
+            }
+          }
+
+          /* Elastic Bouncing Effect */
+          @keyframes bounce {
+
+            0%,
+            100% {
+              transform: translateY(0);
+            }
+
+            50% {
+              transform: translateY(-15px) scale(1.05);
+            }
+          }
+
+          /* Tilt & Rotation for Realistic Motion */
+          @keyframes tilt {
+            0% {
+              transform: rotate(0deg);
+            }
+
+            100% {
+              transform: rotate(3deg);
+            }
+          }
+        </style>
+      </div>
+      <div class="right-header">
+        <h1 class="name" style="
+              display: inline-block;
+              animation: bounce 2s infinite ease-in-out;
+            ">
+          Hi, I'm
+          <span class="name" style="
+                background-image: linear-gradient(
+                  45deg,
+                  red,
+                  orange,
+                  yellow,
+                  green,
+                  cyan,
+                  blue,
+                  violet
+                );
+                background-size: 300% 300%;
+                -webkit-background-clip: text;
+                color: transparent;
+                animation: colorRotate 3s infinite linear;
+              ">
+            Subhajit Debnath
+          </span>
+          A student of Pharmacy
+        </h1>
+
+        <style>
+          @keyframes bounce {
+
+            0%,
+            100% {
+              transform: translateY(0);
+            }
+
+            50% {
+              transform: translateY(-10px);
+            }
+          }
+
+          @keyframes colorRotate {
+            0% {
+              background-position: 0% 50%;
+            }
+
+            50% {
+              background-position: 100% 50%;
+            }
+
+            100% {
+              background-position: 0% 50%;
+            }
+          }
+        </style>
+
+        <p style="
+              animation: fadeIn 2s ease-in-out, subtleGlow 3s infinite alternate;
+              line-height: 1.6;
+              font-size: 1.1rem;
+              color: #ddd; /* Softer white for normal text */
+              text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+            ">
+          I'm a student of Bachelor's in
+          <span style="
+                color: #ffdd00;
+                font-weight: bold;
+                animation: electricGlow 0.8s infinite alternate;
+              ">
+            Pharmacy </span>. I love to learn. <br /><br />
+
+          I am a hardworking and creative professional who demonstrates deep
+          commitment and enthusiasm in everything he does. His innovative
+          thinking and problem-solving skills have helped him carve out a
+          distinctive place in his field.
+
+          <span style="
+                color: #ffdd00;
+                font-weight: bold;
+                animation: electricGlow 0.8s infinite alternate;
+              ">
+            Subhajit Debnath
+          </span>
+          is not only known for his work but also for his ability to build
+          strong relationships with people and collaborate effectively in team
+          settings. His positive attitude and dedication help him succeed in
+          any challenge he takes on.
+        </p>
+
+        <style>
+          @keyframes fadeIn {
+            from {
+              opacity: 0;
+              transform: translateY(5px);
+            }
+
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+
+          @keyframes electricGlow {
+            0% {
+              text-shadow: 0 0 20px rgba(255, 223, 0, 0.9),
+                0 0 40px rgba(255, 223, 0, 0.8),
+                0 0 60px rgba(255, 223, 0, 0.7),
+                0 0 80px rgba(255, 223, 0, 0.6);
+            }
+
+            50% {
+              text-shadow: 0 0 25px rgba(255, 255, 0, 1),
+                0 0 50px rgba(255, 255, 0, 0.9),
+                0 0 75px rgba(255, 255, 0, 0.8),
+                0 0 100px rgba(255, 255, 0, 0.7);
+            }
+
+            100% {
+              text-shadow: 0 0 30px rgba(255, 255, 0, 1),
+                0 0 60px rgba(255, 255, 0, 1), 0 0 90px rgba(255, 255, 0, 0.9),
+                0 0 120px rgba(255, 255, 0, 0.8);
+            }
+          }
+
+          @keyframes subtleGlow {
+            from {
+              text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+            }
+
+            to {
+              text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            }
+          }
+        </style>
+
+        <div class="btn-con">
+          <a href="" class="main-btn">
+            <span class="btn-text">Download CV</span>
+            <span class="btn-icon"><i class="fas fa-download"></i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section sec2 about" id="about">
+      <div class="main-title">
+        <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+      </div>
+      <div class="about-container">
+        <div class="left-about">
+          <h4>Information About me</h4>
+          <p class="text-container">
+            My name is <span class="bold">Subhajit Debnath</span>. I belong to <span class="large">Katwa, West Bengal</span>. 
+            I am currently pursuing a <span class="bigger">Bachelor's in Pharmacy</span> from 
+            <span class="bold">Burdwan Institute of Pharmacy (BIT)</span>. I have a keen interest in the <span class="large">pharmaceutical field</span> 
+            and aspire to contribute to the <span class="bigger">healthcare sector</span> through my <span class="bold">knowledge</span> and <span class="bold">skills</span>. 
+            My academic journey has equipped me with a <span class="large">strong foundation</span> in pharmaceutical sciences, and 
+            I am eager to further enhance my <span class="bigger">expertise</span> in this field.
+        </p>
+        <style>
+          @keyframes gradientRotate {
+              0% { background-position: 0% 50%; }
+              50% { background-position: 100% 50%; }
+              100% { background-position: 0% 50%; }
+          }
+  
+        
+          .text-container {
+            font-family: Arial, sans-serif;
+            font-size: 22px;
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(45deg, #ffea00, #ff9800, #ff5722, #ffcc00);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientRotate 5s infinite linear;
+        }
+          .bold { font-weight: bold; font-size: 28px; }
+          .large { font-size: 32px; }
+          .bigger { font-size: 36px; }
+      </style>
           <div class="btn-con">
             <a href="" class="main-btn">
               <span class="btn-text">Download CV</span>
@@ -42,391 +262,463 @@
             </a>
           </div>
         </div>
-      </div>
-    </header>
-    <main>
-      <section class="section sec2 about" id="about">
-        <div class="main-title">
-          <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+        <div class="right-about">
+          <div class="about-item">
+            <div class="abt-text">
+              <p class="large-text">2+</p>
+              <p class="small-text">Projects<br />completed</p>
+            </div>
+          </div>
+          <div class="about-item">
+            <div class="abt-text">
+              <p class="large-text">2+</p>
+              <p class="small-text">Years of <br />Experince</p>
+            </div>
+          </div>
+          <div class="about-item">
+            <div class="abt-text">
+              <p class="large-text">2024</p>
+              <p class="small-text">Pursing bacheloer's <br />in Pharmacy</p>
+            </div>
+          </div>
+          <div class="about-item">
+            <div class="abt-text">
+              <p class="large-text">2022</p>
+              <p class="small-text">
+                Higher Secondary<br />with mathmatics and Physics and Biology
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="about-container">
-          <div class="left-about">
-            <h4>Information About me</h4>
-            <p>
-              My name is Subhajit Debnath. I belong to Katwa, West Bengal. I am
-              currently pursuing a Bachelors's in Pharmacy from Burdwan
-              Institute of Pharmacy (BIT). I have a keen interest in the
-              pharmaceutical field and aspire to contribute to the healthcare
-              sector through my knowledge and skills. My academic journey has
-              equipped me with a strong foundation in pharmaceutical sciences,
-              and I am eager to further enhance my expertise in this field.
-            </p>
-            <div class="btn-con">
-              <a href="" class="main-btn">
-                <span class="btn-text">Download CV</span>
-                <span class="btn-icon"><i class="fas fa-download"></i></span>
+      </div>
+      <div class="about-stats">
+        <h4 class="stat-title">My skills</h4>
+        <div class="progress-bars">
+          <div class="progress-bar">
+            <div class="prog-title">Pharmacy</div>
+            <div class="progress-con">
+              <p class="prog text">60%</p>
+              <div class="progress">
+                <span class="c"></span>
+              </div>
+            </div>
+          </div>
+          <div class="progress-bar">
+            <div class="prog-title">Pharmaceutical Biology</div>
+            <div class="progress-con">
+              <p class="prog text">60%</p>
+              <div class="progress">
+                <span class="c"></span>
+              </div>
+            </div>
+          </div>
+          <div class="progress-bar">
+            <div class="prog-title">Organic Chemsitry</div>
+            <div class="progress-con">
+              <p class="prog text">60%</p>
+              <div class="progress">
+                <span class="c"></span>
+              </div>
+            </div>
+          </div>
+          <div class="progress-bar">
+            <div class="prog-title">Pharmaceutical Chemsitry</div>
+            <div class="progress-con">
+              <p class="prog text">60%</p>
+              <div class="progress">
+                <span class="c"></span>
+              </div>
+            </div>
+          </div>
+          <div class="progress-bar">
+            <div class="prog-title">Biology</div>
+            <div class="progress-con">
+              <p class="prog text">65%</p>
+              <div class="progress">
+                <span class="cpp"></span>
+              </div>
+            </div>
+          </div>
+          <div class="progress-bar">
+            <div class="prog-title">Botany</div>
+            <div class="progress-con">
+              <p class="prog text">68%</p>
+              <div class="progress">
+                <span class="java"></span>
+              </div>
+            </div>
+          </div>
+          <div class="progress-bar">
+            <div class="prog-title">Zoology</div>
+            <div class="progress-con">
+              <p class="prog text">75%</p>
+              <div class="progress">
+                <span class="oop"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="text-container">
+        <span class="bold">Subhajit Debnath</span> is a <span class="large">dedicated</span> and <span class="bigger">ambitious</span> student known for his <span class="bold">creativity</span> and strong work ethic. 
+        With a <span class="large">natural talent</span> for <span class="bold">problem-solving</span>, he consistently approaches challenges with an <span class="bigger">innovative</span> mindset. 
+        Subhajit's <span class="bold">enthusiasm</span> for learning and his ability to <span class="large">collaborate</span> with peers make him an <span class="bigger">asset</span> in any academic setting. 
+        His <span class="bold">passion</span> for growth and his <span class="large">commitment</span> to excellence drive him to constantly seek new knowledge and skills, 
+        setting him up for <span class="bigger">future success</span> in his <span class="bold">chosen field</span>.
+    </p>
+    <style>
+      @keyframes gradientRotate {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+      }
+
+      .text-container {
+          font-family: Arial, sans-serif;
+          font-size: 22px;
+          font-weight: normal;
+          text-align: center;
+          padding: 30px;
+          background: linear-gradient(45deg, #ff5733, #33ff57, #3357ff, #ff33aa);
+          background-size: 300% 300%;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: gradientRotate 5s infinite linear;
+      }
+
+      .bold { font-weight: bold; font-size: 28px; }
+      .large { font-size: 32px; }
+      .bigger { font-size: 36px; }
+  </style>
+      <h4 class="stat-title">My Timeline</h4>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="tl-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <p class="tl-duration">2022 - Present</p>
+          <h5>Pharmacist Intern - <span>ABC Pharma Solutions</span></h5>
+          <p>
+            * Assisting in prescription processing and medication dispensing
+            <br />* Educating patients on proper medication usage and side
+            effects
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="tl-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <p class="tl-duration">2023 - Present</p>
+          <h5>Pursuing Master's - <span>in Pharmacy</span></h5>
+          <p>
+            Burdwan Institute of Pharmacy (BIT),<br />
+            Burdwan
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="tl-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <p class="tl-duration">2021 - 2022</p>
+          <h5>Research Assistant - <span>XYZ Pharmaceuticals</span></h5>
+          <p>
+            * Conducted research on drug formulations and stability testing
+            <br />* Assisted in documentation for regulatory submissions
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="tl-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <p class="tl-duration">2019 - 2023</p>
+          <h5>Bachelor's - <span>in Pharmacy</span></h5>
+          <p>
+            Burdwan Institute of Pharmacy (BIT),<br />
+            Burdwan
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section sec3 portfolio" id="portfolio">
+      <div class="main-title">
+        <h2>My <span>Gallery</span><span class="bg-text">My work</span></h2>
+      </div>
+      <p class="port-text">Here are some of my pics. See for yourself😊.</p>
+      <div class="portfolios">
+        <div class="portfolio-item">
+          <div class="image">
+            <img src="img/1.jpg" alt="" />
+          </div>
+          <div class="hover-items">
+            <h3>View large</h3>
+            <div class="icons">
+              <a href="https://ibb.co/Rf8M3HF" target="_blank" class="icon">
+                <i class="fas fa-search"></i>
               </a>
             </div>
           </div>
-          <div class="right-about">
-            <div class="about-item">
-              <div class="abt-text">
-                <p class="large-text">2+</p>
-                <p class="small-text">Projects<br />completed</p>
-              </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="image">
+            <img src="img/2.jpg" alt="" />
+          </div>
+          <div class="hover-items">
+            <h3>View large</h3>
+            <div class="icons">
+              <a href="https://ibb.co/BH7m9cpj" target="_blank" class="icon">
+                <i class="fas fa-search"></i>
+              </a>
             </div>
-            <div class="about-item">
-              <div class="abt-text">
-                <p class="large-text">2+</p>
-                <p class="small-text">Years of <br />Experince</p>
-              </div>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="image">
+            <img src="img/3.jpg" alt="" />
+          </div>
+          <div class="hover-items">
+            <h3>View large</h3>
+            <div class="icons">
+              <a href="https://ibb.co/nspCk7wQ" target="_blank" class="icon">
+                <i class="fas fa-search"></i>
+              </a>
             </div>
-            <div class="about-item">
-              <div class="abt-text">
-                <p class="large-text">2024</p>
-                <p class="small-text">Pursing bacheloer's <br />in Pharmacy</p>
-              </div>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="image">
+            <img src="img/4.jpg" alt="" />
+          </div>
+          <div class="hover-items">
+            <h3>View large</h3>
+            <div class="icons">
+              <a href="https://ibb.co/VYrfCxkH" target="_blank" class="icon">
+                <i class="fas fa-search"></i>
+              </a>
             </div>
-            <div class="about-item">
-              <div class="abt-text">
-                <p class="large-text">2022</p>
-                <p class="small-text">
-                  Higher Secondary<br />with mathmatics and Physics and Biology
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="image">
+            <img src="img/5.jpg" alt="" />
+          </div>
+          <div class="hover-items">
+            <h3>View large</h3>
+            <div class="icons">
+              <a href="https://ibb.co/s9n0tLyV" target="_blank" class="icon">
+                <i class="fas fa-search"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="image">
+            <img src="img/6.jpg" alt="" />
+          </div>
+          <div class="hover-items">
+            <h3>View large</h3>
+            <div class="icons">
+              <a href="https://ibb.co/TxwkXSyt" target="_blank" class="icon">
+                <i class="fas fa-search"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Separator for Bike Pictures -->
+              <div style="
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      margin: 30px 0;
+      border-bottom: 4px solid green;
+      font-size: 24px;
+      font-weight: bold;
+      color: green;
+      letter-spacing: 1px;">
+          
+              </div>
+              <div style="
+              width: 100%;
+              text-align: center;
+              padding: 10px 0;
+              margin: 30px 0;
+              border-bottom: 4px solid green;
+              font-size: 24px;
+              font-weight: bold;
+              color: green;
+              letter-spacing: 1px;">
+                       🏍️ Bike Pictures 🏍️
+                      </div>
+                      <div style="
+                      width: 100%;
+                      text-align: center;
+                      padding: 10px 0;
+                      margin: 30px 0;
+                      border-bottom: 4px solid green;
+                      font-size: 24px;
+                      font-weight: bold;
+                      color: green;
+                      letter-spacing: 1px;">
+                             
+                              </div>
+        <div class="portfolio-item">
+          <div class="image">
+            <img src="img/Bike1.jpg" alt="" />
+          </div>
+          <div class="hover-items">
+            <h3>View large</h3>
+            <div class="icons">
+              <a href="https://ibb.co/wFbcJSWL" target="_blank" class="icon">
+                <i class="fas fa-search"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="image">
+            <img src="img/Bike2.jpg" alt="" />
+          </div>
+          <div class="hover-items">
+            <h3>View large</h3>
+            <div class="icons">
+              <a href="https://ibb.co/3ywckRqL" target="_blank" class="icon">
+                <i class="fas fa-search"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="image">
+            <img src="img/Bike3.jpg" alt="" />
+          </div>
+          <div class="hover-items">
+            <h3>View large</h3>
+            <div class="icons">
+              <a href="https://ibb.co/M53hx3xg" target="_blank" class="icon">
+                <i class="fas fa-search"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+      </div>
+    </section>
+    <section class="section sec4 games" id="games"></section>
+    <section class="section sec5 contact" id="contact">
+      <div class="contact-container">
+        <div class="main-title">
+          <h2>
+            Get in <span>Touch</span><span class="bg-text">Contact</span>
+          </h2>
+        </div>
+        <div class="contact-content-con">
+          <div class="left-contact">
+            <h4>Contact me Here</h4>
+            <p>
+              I am available for freelance work. If you have any project that
+              you want to get started, think you need my help with something
+              or just fancy saying hey, then get in touch.
+            </p>
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                  Location
+                </div>
+                <p>: Katwa, West Bengal</p>
+              </div>
+              <div class="contact-item">
+                <div class="icon">
+                  <i class="fas fa-envelope"></i>
+                  <span>Email</span>
+                </div>
+                <p>
+                  <span>: debnathsubhajit@gmail.com</span>
                 </p>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="about-stats">
-          <h4 class="stat-title">My skills</h4>
-          <div class="progress-bars">
-            <div class="progress-bar">
-              <div class="prog-title">Pharmacy</div>
-              <div class="progress-con">
-                <p class="prog text">60%</p>
-                <div class="progress">
-                  <span class="c"></span>
+              <div class="contact-item">
+                <div class="icon">
+                  <i class="fas fa-phone-alt"></i>
+                  Mobile
                 </div>
+                <p>: 9084084222</p>
+              </div>
+              <div class="contact-item">
+                <div class="icon">
+                  <i class="fas fa-globe-asia"></i>
+                  <p>Languages</p>
+                </div>
+                : English, Hindi,Bengali
               </div>
             </div>
-            <div class="progress-bar">
-              <div class="prog-title">Biology</div>
-              <div class="progress-con">
-                <p class="prog text">65%</p>
-                <div class="progress">
-                  <span class="cpp"></span>
-                </div>
-              </div>
-            </div>
-            <div class="progress-bar">
-              <div class="prog-title">Botany</div>
-              <div class="progress-con">
-                <p class="prog text">68%</p>
-                <div class="progress">
-                  <span class="java"></span>
-                </div>
-              </div>
-            </div>
-            <div class="progress-bar">
-              <div class="prog-title">Zoology</div>
-              <div class="progress-con">
-                <p class="prog text">75%</p>
-                <div class="progress">
-                  <span class="oop"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <h4 class="stat-title">My Timeline</h4>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="tl-icon">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <p class="tl-duration">2022 - Present</p>
-            <h5>Pharmacist Intern - <span>ABC Pharma Solutions</span></h5>
-            <p>
-              * Assisting in prescription processing and medication dispensing
-              <br />* Educating patients on proper medication usage and side
-              effects
-            </p>
-          </div>
-
-          <div class="timeline-item">
-            <div class="tl-icon">
-              <i class="fas fa-graduation-cap"></i>
-            </div>
-            <p class="tl-duration">2023 - Present</p>
-            <h5>Pursuing Master's - <span>in Pharmacy</span></h5>
-            <p>
-              Burdwan Institute of Pharmacy (BIT),<br />
-              Burdwan
-            </p>
-          </div>
-
-          <div class="timeline-item">
-            <div class="tl-icon">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <p class="tl-duration">2021 - 2022</p>
-            <h5>Research Assistant - <span>XYZ Pharmaceuticals</span></h5>
-            <p>
-              * Conducted research on drug formulations and stability testing
-              <br />* Assisted in documentation for regulatory submissions
-            </p>
-          </div>
-
-          <div class="timeline-item">
-            <div class="tl-icon">
-              <i class="fas fa-graduation-cap"></i>
-            </div>
-            <p class="tl-duration">2019 - 2023</p>
-            <h5>Bachelor's - <span>in Pharmacy</span></h5>
-            <p>
-              Burdwan Institute of Pharmacy (BIT),<br />
-              Burdwan
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="section sec3 portfolio" id="portfolio">
-        <div class="main-title">
-          <h2>My <span>Gallery</span><span class="bg-text">My work</span></h2>
-        </div>
-        <p class="port-text">
-          Here are some of my pics. See for yourself😊.
-        </p>
-        <div class="portfolios">
-          <div class="portfolio-item">
-            <div class="image">
-              <img src="img/1.jpg" alt="" />
-            </div>
-            <div class="hover-items">
-                <h3>View large</h3>
-              <div class="icons">
-                <a
-                  href="https://ibb.co/Rf8M3HF"
-                  target="_blank"
-                  class="icon"
-                >
-                <i class="fas fa-search"></i>
+            <div class="contact-icons">
+              <div class="contact-icon">
+                <a href="" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" target="_blank">
+                  <i class="fab fa-instagram"></i>
                 </a>
               </div>
             </div>
           </div>
-          <div class="portfolio-item">
-            <div class="image">
-              <img src="img/2.jpg" alt="" />
-            </div>
-            <div class="hover-items">
-                <h3>View large</h3>
-              <div class="icons">
-                <a
-                  href="https://ibb.co/BH7m9cpj"
-                  target="_blank"
-                  class="icon"
-                >
-                <i class="fas fa-search"></i>
+          <div class="right-contact">
+            <form action="" class="contact-form">
+              <div class="input-control i-c-2">
+                <input type="text" required placeholder="YOUR NAME" />
+                <input type="email" required placeholder="YOUR EMAIL" />
+              </div>
+              <div class="input-control">
+                <input type="text" required placeholder="ENTER SUBJECT" />
+              </div>
+              <div class="input-control">
+                <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
+              </div>
+              <div class="submit-btn">
+                <a href="#" class="main-btn">
+                  <span class="btn-text">Download</span>
+                  <span class="btn-icon"><i class="fas fa-download"></i></span>
                 </a>
               </div>
-            </div>
-          </div>
-          <div class="portfolio-item">
-            <div class="image">
-              <img src="img/3.jpg" alt="" />
-            </div>
-            <div class="hover-items">
-              <h3>View large</h3>
-              <div class="icons">
-                <a
-                  href="https://ibb.co/nspCk7wQ"
-                  target="_blank"
-                  class="icon"
-                >
-                <i class="fas fa-search"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item">
-            <div class="image">
-              <img src="img/4.jpg" alt="" />
-            </div>
-            <div class="hover-items">
-              <h3>View large</h3>
-              <div class="icons">
-                <a
-                  href="https://ibb.co/VYrfCxkH"
-                  target="_blank"
-                  class="icon"
-                >
-                <i class="fas fa-search"></i>
-
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item">
-            <div class="image">
-              <img src="img/5.jpg" alt="" />
-            </div>
-            <div class="hover-items">
-                <h3>View large</h3>
-              <div class="icons">
-                <a
-                  href="https://ibb.co/s9n0tLyV"
-                  target="_blank"
-                  class="icon"
-                >
-                <i class="fas fa-search"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item">
-            <div class="image">
-              <img src="img/6.jpg" alt="" />
-            </div>
-            <div class="hover-items">
-                <h3>View large</h3>
-              <div class="icons">
-                <a
-                  href="https://ibb.co/TxwkXSyt"
-                  target="_blank"
-                  class="icon"
-                >
-                <i class="fas fa-search"></i>
-                </a>
-              </div>
-            </div>
+            </form>
           </div>
         </div>
-      </section>
-      <section class="section sec4 games" id="games"></section>
-      <section class="section sec5 contact" id="contact">
-        <div class="contact-container">
-          <div class="main-title">
-            <h2>
-              Get in <span>Touch</span><span class="bg-text">Contact</span>
-            </h2>
-          </div>
-          <div class="contact-content-con">
-            <div class="left-contact">
-              <h4>Contact me Here</h4>
-              <p>
-                I am available for freelance work. If you have any project that
-                you want to get started, think you need my help with something
-                or just fancy saying hey, then get in touch.
-              </p>
-              <div class="contact-info">
-                <div class="contact-item">
-                  <div class="icon">
-                    <i class="fas fa-map-marker-alt"></i>
-                    Location
-                  </div>
-                  <p>: Katwa, West Bengal</p>
-                </div>
-                <div class="contact-item">
-                  <div class="icon">
-                    <i class="fas fa-envelope"></i>
-                    <span>Email</span>
-                  </div>
-                  <p>
-                    <span>: debnathsubhajit@gmail.com</span>
-                  </p>
-                </div>
-                <div class="contact-item">
-                  <div class="icon">
-                    <i class="fas fa-phone-alt"></i>
-                    Mobile
-                  </div>
-                  <p>: 9084084222</p>
-                </div>
-                <div class="contact-item">
-                  <div class="icon">
-                    <i class="fas fa-globe-asia"></i>
-                    <p>Languages</p>
-                  </div>
-                  : English, Hindi,Bengali
-                </div>
-              </div>
-              <div class="contact-icons">
-                <div class="contact-icon">
-                  <a
-                    href=""
-                    target="_blank"
-                  >
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                  <a href="" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                  <a
-                    href=""
-                    target="_blank"
-                  >
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="right-contact">
-              <form action="" class="contact-form">
-                <div class="input-control i-c-2">
-                  <input type="text" required placeholder="YOUR NAME" />
-                  <input type="email" required placeholder="YOUR EMAIL" />
-                </div>
-                <div class="input-control">
-                  <input type="text" required placeholder="ENTER SUBJECT" />
-                </div>
-                <div class="input-control">
-                  <textarea
-                    name=""
-                    id=""
-                    cols="15"
-                    rows="8"
-                    placeholder="Message Here..."
-                  ></textarea>
-                </div>
-                <div class="submit-btn">
-                  <a href="#" class="main-btn">
-                    <span class="btn-text">Download</span>
-                    <span class="btn-icon"
-                      ><i class="fas fa-download"></i
-                    ></span>
-                  </a>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <div class="controlls">
-      <div class="control control-1 active-btn" data-id="home">
-        <i class="fas fa-home"></i>
       </div>
-      <div class="control control-2" data-id="about">
-        <i class="fas fa-user"></i>
-      </div>
-      <div class="control control-3" data-id="portfolio">
-        <i class="fas fa-briefcase"></i>
-      </div>
-      <div class="control control-4" data-id="game">
-        <a href="game.html"><i class="fas fa-dice"></i></a>
-      </div>
-      <div class="control control-5" data-id="contact">
-        <i class="fas fa-envelope-open"></i>
-      </div>
+    </section>
+  </main>
+
+  <div class="controlls">
+    <div class="control control-1 active-btn" data-id="home">
+      <i class="fas fa-home"></i>
     </div>
-    <div class="theme-btn">
-      <i class="fas fa-adjust"></i>
+    <div class="control control-2" data-id="about">
+      <i class="fas fa-user"></i>
     </div>
-    <script src="app.js"></script>
-  </body>
+    <div class="control control-3" data-id="portfolio">
+      <i class="fas fa-briefcase"></i>
+    </div>
+    <div class="control control-4" data-id="game">
+      <a href="game.html"><i class="fas fa-dice"></i></a>
+    </div>
+    <div class="control control-5" data-id="contact">
+      <i class="fas fa-envelope-open"></i>
+    </div>
+  </div>
+  <div class="theme-btn">
+    <i class="fas fa-adjust"></i>
+  </div>
+  <script src="app.js"></script>
+</body>
+
 </html>
